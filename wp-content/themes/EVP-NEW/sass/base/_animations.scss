@@ -1,0 +1,102 @@
+@keyframes tooltip-text-1 {
+    
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes circle-background-1 {
+
+  0% {
+    background: transparent;
+    transform: scale(0);
+  }
+
+  100% {
+    background: rgba(#fff, .25);
+    transform: scale(1);
+  }
+}
+
+
+@keyframes tooltip-text-2 {
+    
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes circle-background-2 {
+
+  0% {
+    background: transparent;
+    transform: scale(0);
+  }
+
+  100% {
+    background: rgba(#fff, .25);
+    transform: scale(1);
+  }
+}
+
+@keyframes tooltip-text-3 {
+  
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes circle-background-3 {
+
+  0% {
+    background: transparent;
+    transform: scale(0);
+  }
+
+  100% {
+    background: rgba(#fff, .25);
+    transform: scale(1);
+  }
+}
+
+@keyframes tooltip-text-4 {
+    
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes circle-background-4 {
+
+  0% {
+    background: transparent;
+    transform: scale(0);
+  }
+
+  100% {
+    background: rgba(#fff, .25);
+    transform: scale(1);
+  }
+}
+
+.rellax {
+  transition: all 1.5s cubic-bezier(.38,.12,.66,.92);
+}

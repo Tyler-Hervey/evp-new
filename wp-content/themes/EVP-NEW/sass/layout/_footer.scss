@@ -1,0 +1,115 @@
+.site-footer {
+  color: $color-text-footer;
+  background-image: linear-gradient(to bottom, #1c1c1c, #0c0c0c);
+  .footer-row {
+    display: flex;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    justify-content: space-around;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: space-between;
+      // align-items: center;
+  }
+    .flex-col-1 {
+      @include respond(tab-port) {
+        margin-bottom: 2rem;
+    }
+    }
+
+    .flex-col-2 {
+      @include respond(tab-port) {
+        margin-left: 5rem;
+        margin-bottom: 2rem;
+    }
+  }
+
+  .flex-col-3 {
+    @include respond(tab-port) {
+      margin-left: 5rem;
+      margin-bottom: 2rem;
+  }
+}
+}
+
+  .logo {
+    margin-left: 5rem;
+  }
+
+  .footer-paragraph {
+    margin: 2rem 5rem 5rem 5rem;
+    max-width: 35rem;
+    @include respond(tab-port) {
+      margin-bottom: 0;
+  }
+  }
+
+  ul {
+    margin: 5rem 0 0 0;
+    list-style: none;
+    padding-left: 0;
+    @include respond(tab-port) {
+      margin: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+      
+      img {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .footer-row--2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+    list-style: none;
+
+    img {
+      margin-top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .item-1{
+      text-align: center;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      border: solid 1px #a0a8af;
+      margin: 0 10rem;
+      cursor: pointer;
+      @include respond(tab-port) {
+        margin: 0 2rem;
+      }
+    }
+    .item-2{
+      text-align: center;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      border: solid 1px #a0a8af;
+      margin: 0 10rem;
+      cursor: pointer;
+      @include respond(tab-port) {
+        margin: 0 2rem;
+      }
+    }
+    .item-3{
+      text-align: center;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      border: solid 1px #a0a8af;
+      margin: 0 10rem;
+      cursor: pointer;
+      @include respond(tab-port) {
+        margin: 0 2rem;
+      }
+    }
+  }
+}

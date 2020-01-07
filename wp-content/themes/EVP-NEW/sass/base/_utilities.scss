@@ -1,0 +1,24 @@
+.u-center-text { text-align: center !important; }
+.u-margin-bottom-small { margin-bottom: 1.5rem !important; }
+.u-margin-top-big { margin-top: 8rem !important; }
+.u-margin-top-huge { margin-top: 10rem !important; }
+
+.u-full-height {
+  height: 100vh;
+}
+.u-partial-height {
+  height: 80vh;
+}
+.u-z-index-high {
+  z-index: 1000;
+}
+.u-z-index-neg {
+  z-index: -1;
+}
+
+.u-flex {
+  display: flex;
+}
+.bg_white{
+background: $color-white;
+}

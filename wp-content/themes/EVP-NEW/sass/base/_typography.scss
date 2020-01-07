@@ -1,0 +1,400 @@
+@font-face {
+  font-family: 'Simplon Mono';
+  src: url('./fonts/SimplonMono.eot');
+  src: url('./fonts/SimplonMono.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/SimplonMono.svg#SimplonMono') format('svg'),
+       url('./fonts/SimplonMono.ttf') format('truetype'),
+       url('./fonts/SimplonMono.woff') format('woff'),
+       url('./fonts/SimplonMono.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Simplon Mono';
+  src: url('./fonts/SimplonMono-Light.eot');
+  src: url('./fonts/SimplonMono-Light.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/SimplonMono-Light.svg#SimplonMono-Light') format('svg'),
+       url('./fonts/SimplonMono-Light.ttf') format('truetype'),
+       url('./fonts/SimplonMono-Light.woff') format('woff'),
+       url('./fonts/SimplonMono-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Untitled Sans';
+  src: url('./fonts/UntitledSans-Medium.eot');
+  src: url('./fonts/UntitledSans-Medium.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/UntitledSans-Medium.svg#UntitledSans-Medium') format('svg'),
+       url('./fonts/UntitledSans-Medium.ttf') format('truetype'),
+       url('./fonts/UntitledSans-Medium.woff') format('woff'),
+       url('./fonts/UntitledSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Untitled Sans';
+  src: url('./fonts/UntitledSans-Light.eot');
+  src: url('./fonts/UntitledSans-Light.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/UntitledSans-Light.svg#UntitledSans-Light') format('svg'),
+       url('./fonts/UntitledSans-Light.ttf') format('truetype'),
+       url('./fonts/UntitledSans-Light.woff') format('woff'),
+       url('./fonts/UntitledSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UntitledSans-LightItalic';
+  src: url('./fonts/UntitledSans-LightItalic.eot');
+  src: url('./fonts/UntitledSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/UntitledSans-LightItalic.svg#UntitledSans-LightItalic') format('svg'),
+       url('./fonts/UntitledSans-LightItalic.ttf') format('truetype'),
+       url('./fonts/UntitledSans-LightItalic.woff') format('woff'),
+       url('./fonts/UntitledSans-LightItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'English 1766';
+  src: url('./fonts/English1766-Thin.eot');
+  src: url('./fonts/English1766-Thin.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/English1766-Thin.svg#English1766-Thin') format('svg'),
+       url('./fonts/English1766-Thin.ttf') format('truetype'),
+       url('./fonts/English1766-Thin.woff') format('woff'),
+       url('./fonts/English1766-Thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Untitled Sans';
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: $color-text-primary;
+}
+
+.heading {
+    font-family: 'Simplon Mono';
+    font-weight: 300;
+    line-height: 1.14;
+
+  &--primary{
+    font-weight: normal;
+    letter-spacing: .3px;
+    font-size: 5rem;
+    color: $color-text-primary;
+     font-weight: 300;
+         max-width: 56rem;
+    &-hero{
+      font-weight: 300;
+     font-size: 4rem;
+     text-transform: uppercase;
+    }
+    &-post{
+      max-width: 100%;
+    }
+  }
+
+  &--secondary{
+    color: $color-text-secondary;
+    font-size: 4rem;
+    margin: 15rem auto 4rem;
+    max-width: 50rem;
+
+    @include respond (phone) {
+      margin: 10rem auto 4rem;
+    }
+  }
+  &--tertiary{
+    color: $color-text-secondary;
+    font-size: 3rem;
+    margin: 12rem auto 5rem;
+    text-align: center;
+    max-width: 90%;
+        @include respond (phone) {
+      margin: 8rem auto 4rem;
+    }
+  }
+
+  &--pre{
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: .8px;
+    font-weight: 100;
+  }
+
+}
+
+.paragraph{
+  font-size: 2rem;
+  color: $color-text-secondary;
+      &_container{
+          max-width: 50rem;
+          margin: auto;
+      }
+      &--primary{
+      margin-top: 2.5rem;
+      max-width: 42rem;
+    }
+      &--secondary{
+      margin-top: 1.8rem;
+      max-width: 42rem;
+      line-height: 1.45;
+    }
+
+    &_line{
+    display: block;
+    position: relative;
+    max-width: 40rem;
+    margin-left: 12rem;
+    &--container{
+      max-width: 52rem;
+      margin: auto;
+    }
+    &::before{
+      position: absolute;
+      height: 2px;
+      background: $color-primary;
+      left: -10.7rem;
+      width: 8rem;
+      content: '';
+      margin: 1.5rem auto;
+    }
+  }
+}
+
+
+// h1 { 
+//   font-family: 'Simplon Mono', sans-serif;
+//   font-size: 4rem;
+//   letter-spacing: .21;
+//   color: $color-text-primary;
+//   font-weight: 100;
+// }
+
+.h2 {
+  font-family: 'Simplon Mono';
+  font-size: 4rem;
+  letter-spacing: .23px;
+  line-height: 1.27;
+  max-width: 50rem;
+  font-weight: 300;
+}
+
+.polygon-cta--p {
+  font-family: 'Untitled Sans';
+  font-weight: 300;
+  font-size: 2rem;
+  color: #e4e4e4;
+}
+
+.polygon-cta--button {
+  font-family: 'Untitled Sans';
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: $color-text-primary;
+}
+
+.fact--title {
+  font-family: 'Simplon Mono';
+  font-size: 4.5rem;
+  color: $color-primary;
+}
+.fact--subtitle {
+  font-family: 'Simplon Mono';
+  font-size: 2.2rem;
+}
+
+.paragraph{
+  &--primary{
+  margin-top: 2.5rem;
+  max-width: 42rem;
+ }
+}
+.text-shadow{
+  &--primary{
+      text-shadow: rgba(0,0,0,0.7) 0px 2px 10px;
+  }
+  
+  &--secondary{
+      text-shadow: $color-black 0px 0px 8px;
+  }
+}
+
+.service-slider {
+  color: $color-text-secondary;
+  font-family: 'Simplon Mono', sans-serif;
+  font-weight: 100;
+
+}
+.dot-number {
+  color: $color-text-secondary;
+  font-family: 'Roboto Mono';
+  font-size: 2rem;
+  // font-weight: 100;
+}
+
+.slide--number {
+  font-size: 4.9rem;
+}
+.slide--title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  line-height: 3.1rem;
+}
+
+.slide-heading--p {
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+
+.slide-cta--1, .slide-cta--2 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.8rem;
+}
+
+.dot-counter {
+  font-family: 'Roboto Mono', monospace;
+  color: #212121;
+}
+
+.testimonial--container {
+  color: $color-text-secondary;
+  .testimonial--title {
+    font-family: 'Simplon Mono';
+    line-height: 2.2rem;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+  }
+}
+
+.testimonial--p {
+  font-family: 'Untitled Sans Light';
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+//contact section
+.contact-container {
+  font-family: 'Simplon Mono';
+  color: $color-text-secondary;
+}
+.contact--number {
+  font-size: 4.9rem;
+}
+.contact--title {
+  font-weight: 100;
+  font-size: 3.1rem;
+  text-transform: uppercase;
+  line-height: 3.1rem;
+  color: $color-text-secondary;
+} 
+
+.contact-heading--p {
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+
+.contact-form {
+  input, textarea {
+    font-family: 'Simplon Mono'
+  }}
+
+  .site-footer {
+    // font-family: 'Simplon Mono';
+    font-size: 1.8rem;
+    letter-spacing: .88px;
+
+    .footer-title {
+      font-family: 'Simplon Mono';
+      font-size: 2rem;
+      color: $color-text-footer-title;
+      text-transform: uppercase;
+    }
+  }
+#e-v-p {
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  font-size: 70rem;
+  color: $color-evp-letters;
+  font-weight: 400;
+  line-height: 70rem;
+  overflow: hidden;
+  text-overflow: clip;
+  letter-spacing: 25rem;
+  z-index: 1;
+  transform: rotate(-90deg);
+}
+#evp-letters {
+  font-family: 'Oswald', sans-serif;
+  font-size: 70rem;
+  color: $color-evp-letters;
+  font-weight: 400;
+  line-height: 80rem;
+  overflow: hidden;
+  text-overflow: clip;
+  letter-spacing: 5rem;
+  white-space: nowrap;
+
+
+  @include respond(tab-land) {
+    font-size: 40rem;
+    line-height: 40rem;
+    transform: translateY(50%);
+  }
+
+  @include respond(tab-land) {
+    font-size: 30rem;
+    line-height: 30rem;
+    transform: translateY(50%);
+  }
+  
+
+  @include respond(phone) {
+    font-size: 12rem;
+    line-height: 20rem;
+    max-width: 40rem;
+    transform: translateY(50%);
+  }
+}
+
+.mission-h2 {
+  font-family: 'Simplon Mono';
+  font-size: 5rem;
+  letter-spacing: .26px;
+}
+
+.mission-paragraph {
+  font-family: 'Simplon Mono';
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+  letter-spacing: .09px;
+}
+
+.quote-module {
+  font-family: 'Simplon Mono';
+  color: $color-primary;
+  letter-spacing: .17px;
+  font-size: 2rem;
+}
+
+.blog-article-section {
+  font-family: 'Simplon Mono';
+  color: $color-text-secondary;
+  .blog-title--number {
+    font-size: 2.4rem;
+  }
+  .blog-title--text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.25;
+  
+  }
+  .blog-cta {
+    font-size: 2rem;
+  }
+}

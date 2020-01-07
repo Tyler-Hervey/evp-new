@@ -1,0 +1,74 @@
+.header{
+  
+  &_bg{
+    display: flex;
+      height: 100vh; 
+      background-position: center;
+      background-size: cover;
+    &--primary{
+      height: 100vh; 
+      // background-position: center;
+      // background-size: cover;
+      background-image: linear-gradient(181deg, rgba(8, 8, 8, 0.62), rgba(22, 22, 22, 0.74) 51%, #0c0c0c), url(./img/service-header.png); 
+    }
+
+    &--post{
+      background-image: linear-gradient(237deg, #192128, #172129 43%, #0e1113, #223341);
+      -webkit-clip-path: polygon(0 0%, 100% 0, 100% 75%, 0% 100%);
+      clip-path: polygon(0% 0%, 100% 0, 100% 75%, 0% 100%);
+    }
+
+
+  }
+
+  &_container{
+    &--primary{
+      margin: 20rem 0 auto 4.5rem;
+    }
+  }
+
+  &_pre{
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1025px;
+    margin: 0 auto 3rem;
+    left: 10rem;
+  
+    &::before{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 1px;
+      margin: auto;
+      background: #979797;
+      right: calc(100% + 25px);
+      left: auto;
+      width: 100vw;
+      content: '';
+    }
+    
+    &::after{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 1px;
+        margin: auto 25px;
+        background: #979797;
+        right: auto;
+        left: auto;
+        width: 100px;
+        content: '';
+    }
+  }
+}
+
+
+
+
+.service-img{
+  background-image: url('./img/beautiful-people-planning.png');
+  background-size: cover;
+  background-position: center;
+
+}

@@ -1,0 +1,138 @@
+.page-template-page-articles {
+
+  .navigation__nav {
+    color: #212121;
+  }
+  #content {
+    background-color: #ffffff;
+    // margin-top: 20rem;
+  }
+  #featured-content {
+    margin: 20rem auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .blog-article-section {
+    margin-top: 5rem;
+  }
+  .blog-article__container {
+    width: 100%;
+  }
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+  #philosophy_logo {
+    top: 60rem;
+    max-width: 100%;
+    svg {
+      max-width: 100%;
+    }
+  }
+
+  .featured-content__text {
+    position: relative;
+    z-index: 1;
+  }
+
+  .featured-content__image {
+    position: relative;
+    z-index: 1;
+
+  }
+
+  .featured__title {
+    font-size: 4rem;
+    font-family: 'Simplon Mono';
+    font-weight: 300;
+  }
+
+  .article--description {
+    color: $color-text-secondary;
+  }
+
+  .appr-sec2_content {
+    max-width: 55rem;
+    z-index: 1;
+  }
+  .featured-content--right {
+    margin: auto;
+    max-width: 60rem;
+    z-index: 1;
+  }
+  .blog-title--container {
+    min-height: 13rem;
+    align-items: flex-start;
+    @include respond(tab-port) {
+      max-width: 100%;
+      min-height: initial;
+    }
+  }
+  .blog-title--text {
+    color: $color-text-secondary;
+  }
+
+  .blog-article_row {
+    display: flex;
+    max-width: 100%;
+    margin: auto  5rem;
+    justify-content: center;
+    
+    @include respond(tab-land) {
+      flex-direction: column-reverse;
+    }
+    @include respond(tab-port) {
+      margin: 1rem;
+    }
+
+  }
+
+  .blog-article__container {
+    display: flex;
+   z-index: 100;
+   flex-flow: row wrap;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  .blog-article {
+    max-width: 30rem;
+    margin: 2rem;
+
+    @include respond(tab-port) {
+      max-width: 90%;
+    }
+  }
+  div[class^="blog-thumbnail"] {
+    // flex-grow: 1;
+    height: 30rem;
+  }
+
+  #category-menu {
+    background-color: white;
+    box-shadow: rgba(#000, 0.2) 0 2px 4px;
+    // padding: 2rem;
+    height: 100%;
+    z-index: 100;
+    padding: 1rem 2.5rem;
+    list-style: none;
+
+    .widget-title {
+      text-align: center;
+      margin: 0;
+    }
+
+      li {
+        padding: 1rem 2rem;
+        margin: 1rem;
+        text-align: center;
+        color: #F3F7F9;
+        background-color: #192128;
+      }
+  }
+
+}

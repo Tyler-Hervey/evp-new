@@ -1,0 +1,212 @@
+.post{
+    &_content {
+      position: relative;
+      z-index: 500;
+    }
+    &_image{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 55rem;
+    width: 90%;
+    margin: -30rem auto 0;
+    z-index: 5; 
+    @include respond(phone) { 
+      width: 100%;
+    }
+    }
+    &_quote{
+        text-align: center;
+        max-width: 80rem;
+        margin: 4rem auto;
+        font-family: 'Simplon Mono';
+        color: $color-primary;
+        letter-spacing: .17px;
+        font-size: 3.2rem;
+    }
+    &_title{
+        margin: 5rem 0 0 ;
+        max-width: 100%;
+
+    }
+    &_date{
+        margin:0;
+         color: #141414;
+    }
+    &_container{
+      margin-top: 5rem;
+      position: relative;
+    }
+    &_bg--logo{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: contain;
+        background-image: url("./img/EVP_Logo-post.png");
+        background-repeat: no-repeat; 
+        top: 30%; 
+        z-index: 1;
+    }
+}
+
+
+.post-article-bg{
+  position: absolute;
+  -webkit-clip-path: polygon(0 50%, 100% 36%, 100% 100%, 0% 100%);
+   clip-path: polygon(0 50%, 100% 36%, 100% 100%, 0% 100%);
+   background-image: linear-gradient(237deg, #192128, #172129 43%, #0e1113, #223341);
+   height: 100%;
+   width: 100%;
+  @include respond (phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+} 
+.post-article-section {
+  position: relative;
+    font-family: 'Simplon Mono';
+  color: $color-text-secondary;
+  background: transparent;
+  margin-top: 10rem;
+  padding-bottom: 12rem;
+  z-index: 1000;
+  .post-article_row{
+    justify-content: center;
+  }
+
+  @include respond (tab-port) {
+    transform: none;
+  }
+
+  .post-cta {
+
+    color: $color-primary;
+    cursor: pointer;
+    justify-content: left;
+
+    &:before {
+      position: relative;
+      content: '';
+      border-top: 1px solid #D1D9E0;
+      display: block;
+      width: 70%;
+      bottom: 1rem;
+      // left:-5rem;
+    }
+
+    &:after {
+      position: relative;
+      content: '';
+      width: 50%;
+      display: block;
+      // margin-left: 2rem;
+      border-top: 1px solid #D1D9E0;
+      // left:-5rem;
+      top: 1rem;
+    }
+
+  }
+
+  div[class^="post-article--"] {
+        @media only screen and (min-width: 1000px) {
+      max-width: 46rem; 
+    };
+    @include respond(phone) {
+      margin: 5rem auto;
+      max-width: 44rem; 
+    }
+  }
+
+  .post-article--1{
+    @include respond(phone) {
+      margin-top: 2rem;
+    }
+  }
+
+  .post-title--container {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    // margin-left: 4rem;
+  }
+
+  .post-title--text {
+    max-width: 80%;
+    margin-left: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.25;
+
+    &:before {
+      position: relative;
+      content: '';
+      border-top: 2px solid $color-primary;
+      display: block;
+      width: 30rem;
+      bottom: 1rem;
+      left:-5rem;
+    }
+
+    &:after {
+      position: relative;
+      content: '';
+      width: 20rem;
+      display: block;
+      // margin-left: 2rem;
+      border-top: 2px solid $color-primary;
+      left:-5rem;
+      top: 1rem;
+    }
+
+    @include respond(phone) {
+      color: $color-text-primary;
+    }
+  }
+
+  .post-title--number {
+     font-size: 2.4rem;
+    @include respond(phone) {
+      color: $color-primary;
+    }
+  }
+  .post-thumbnial--1 {
+    background-image: linear-gradient(rgba(25, 31, 36, 0.5),rgba(25, 31, 36, 0.5)),url('./img/post-1.jpeg'); 
+    min-height: 30rem;
+    max-width: 40rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+
+  }
+
+  .post-thumbnial--2 {
+    background-image: linear-gradient(rgba(25, 31, 36, 0.5),rgba(25, 31, 36, 0.5)), url('./img/post-2.png');
+    min-height: 30rem;
+    max-width: 40rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+
+  .post-thumbnial--3 {
+    background-image: linear-gradient(rgba(25, 31, 36, 0.5),rgba(25, 31, 36, 0.5)), url('./img/post-3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 40rem;
+    min-height: 30rem;
+  }
+
+    .post-article--description {
+    color: $color-text-primary;
+    padding-top: 1rem;
+      max-width: 70%;
+  }
+}
