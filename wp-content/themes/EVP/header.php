@@ -44,6 +44,9 @@
 
 		<!-- </div> site branding -->
 	<nav id="site-navigation" class="main-navigation">
+	<a class="logo-dark-link" href="/">
+		<img id="logo-dark" src="<?php bloginfo('template_url'); ?>/img/Logo2.png" />
+	</a>
 			<a href="/" class="navigation__link logo">
 				<svg id="site-logo"  width="134px" height="47px" viewBox="0 0 134 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<g id="Present-og-color" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

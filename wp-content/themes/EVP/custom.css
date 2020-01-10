@@ -55,7 +55,7 @@
     transform: scale(1); } }
 
 .rellax {
-  transition: all 1.5s cubic-bezier(0.38, 0.12, 0.66, 0.92); }
+  transition: all 0.8s cubic-bezier(0.38, 0.12, 0.66, 0.92); }
 
 #content {
   margin: 0 auto !important; }
@@ -1714,20 +1714,54 @@ body {
     max-width: 40rem;
     min-height: 30rem; }
 
+#site-navigation .logo-dark-link {
+  display: none; }
+
+#logo-dark {
+  display: none; }
+
+.page-template-page-articles #site-navigation .logo-dark-link {
+  display: inline; }
+
+.page-template-page-articles #site-navigation #toggle path {
+  fill: #222; }
+
+.page-template-page-articles #site-navigation #toggle.active path {
+  fill: #fff; }
+
+.page-template-page-articles #logo-dark {
+  display: block;
+  max-width: 150px; }
+
 .page-template-page-articles .navigation__nav {
   color: #212121; }
+  @media only screen and (max-width: 48em) {
+    .page-template-page-articles .navigation__nav {
+      color: #fff; } }
+
+.page-template-page-articles #site-logo {
+  display: none; }
 
 .page-template-page-articles #content {
   background-color: #ffffff; }
 
 .page-template-page-articles #featured-content {
-  margin: 20rem auto;
+  margin: 20rem 5rem auto;
   position: relative;
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 36em) {
+    .page-template-page-articles #featured-content {
+      margin: 10rem auto; } }
 
 .page-template-page-articles .blog-article-section {
   margin-top: 5rem; }
+  .page-template-page-articles .blog-article-section .title-container {
+    margin-left: 7rem; }
+    @media only screen and (max-width: 36em) {
+      .page-template-page-articles .blog-article-section .title-container {
+        margin: auto;
+        text-align: center; } }
 
 .page-template-page-articles .blog-article__container {
   width: 100%; }
@@ -1777,7 +1811,9 @@ body {
       min-height: initial; } }
 
 .page-template-page-articles .blog-title--text {
-  color: #212121; }
+  color: #212121;
+  font-family: 'Untitled Sans';
+  font-weight: 300; }
 
 .page-template-page-articles .blog-article_row {
   display: flex;
@@ -1812,10 +1848,14 @@ body {
 .page-template-page-articles #category-menu {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px;
+  margin: 0;
   height: 100%;
   z-index: 100;
   padding: 1rem 2.5rem;
   list-style: none; }
+  @media only screen and (max-width: 36em) {
+    .page-template-page-articles #category-menu {
+      margin-bottom: 2rem; } }
   .page-template-page-articles #category-menu .widget-title {
     text-align: center;
     margin: 0; }

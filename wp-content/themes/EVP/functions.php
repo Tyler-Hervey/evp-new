@@ -270,7 +270,6 @@ function prefix_load_cat_posts () {
 							<a href="<?php echo the_permalink(); ?>"><span class="blog-cta">READ MORE  ></span></a>
 					</div>
 
-
 		<?php 
 			}
 		
@@ -308,7 +307,7 @@ function theme_assets() {
  wp_enqueue_script( 'tabs', get_template_directory_uri() . '/js/tabs.js','', '1.0', true );
  wp_enqueue_script( 'custom-scroll', get_template_directory_uri() . '/js/custom-scroll.js','', '1.0', true );
  wp_enqueue_script( 'slider-menu', get_template_directory_uri() . '/js/slider-menu.js','', '1.0', true );
- wp_enqueue_script( 'article-ajax', get_template_directory_uri() . '/js/article-ajax.js','', '1.0', true );
+ wp_enqueue_script( 'article-ajax', get_template_directory_uri() . '/js/article-ajax.js','', '1.1', true );
 
 }
 

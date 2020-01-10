@@ -41,31 +41,11 @@ get_header();
       </div>
       <?php wp_reset_postdata(); ?>
         <?php endif; ?>
-        <div class="logo-container">
-            <div id="philosophy_logo" class="rellax" data-rellax-speed="-3" data-rellax-percentage="0.5">
-              <svg width="626px" height="542px" viewBox="0 0 626 542" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <defs>
-                    <linearGradient x1="85.7852199%" y1="18.8827322%" x2="2.22997859%" y2="88.7687505%" id="linearGradient-1">
-                        <stop stop-color="#F3F7F9" offset="0%"></stop>
-                        <stop stop-color="#313F4C" offset="43.0962916%"></stop>
-                        <stop stop-color="#34393D" offset="100%"></stop>
-                        <stop stop-color="#223341" offset="100%"></stop>
-                    </linearGradient>
-                </defs>
-                <g id="Philosophy-svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.099269">
-                    <g id="Appraisers" transform="translate(-408.000000, -1038.000000)" fill="url(#linearGradient-1)" stroke="#979797">
-                        <g id="mission" transform="translate(86.000000, 1023.000000)">
-                            <path d="M776.301273,530 L654,530 L719.031705,301 L909,301 L776.301273,530 Z M361,300 L552.824769,300 L618,529 L493.99565,529 L361,300 Z M786.186181,61 L909,275 L726,275 L786.186181,61 Z M546,272 L363,272 L485.813987,58 L546,272 Z M691,300 L636.5,495 L582,300 L691,300 Z M573.124924,272 L508,43 L764,43 L698.875076,272 L573.124924,272 Z M790.997084,16 L478.999028,16 L323,286.001943 L478.999028,556 L790.997084,556 L947,286.001943 L790.997084,16 L790.997084,16 Z" id="EVP_Logos_CMYK_Mark_BW"></path>
-                        </g>
-                    </g>
-                </g>
-            </svg>
-          </div>
-        </div>
-
-
-
+       
     <div class="blog-article-section">
+      <div class="title-container">
+        <h2>PREVIOUS ARTICLES</h2>
+      </div>
       <div class="blog-article_row">
       <div class="blog-article__container">
               <?php 

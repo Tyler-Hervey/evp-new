@@ -76,54 +76,56 @@ get_header();
 
     <div class="blog-article-section container-fluid">
       <div class="row blog-article_row">
-              <?php 
-              $args = array(
-                'posts_per_page' => 3
-            );
-               $my_query = new WP_Query($args);
-
-  
-        if ( $my_query->have_posts() ) {
-          
-            while ( $my_query->have_posts() ) {
-          
-                $my_query->the_post();
-          ?>
-                <a href="<?php echo the_permalink(); ?>">
-                <div class="blog-article--<?php 
-                    $postCount = $my_query->current_post + 1;
-                    echo $postCount ;?> col-sm-4">
+              
+      <!-- Article 1 -->
+                <a href="<?php echo get_site_url(); ?>/innovative-valuation-service-redefines-residential-appraisals/">
+                <div class="blog-article--1 col-sm-4">
                   <div class="blog-title--container">
-                    <div class="blog-title--number">0<?php 
-
-                    echo $postCount;
-                    ;?></div>
-                    <div class="blog-title--text"><?php the_title() ;?></div>
+                    <div class="blog-title--number">01</div>
+                    <div class="blog-title--text">INNOVATIVE VALUATION SERVICE REDEFINES RESIDENTIAL APPRAISALS</div>
 
                   </div>
                   </a>
-                  <a href="<?php echo the_permalink(); ?>">
-                  <div class="blog-thumbnial--<?php echo $postCount ;?>"style="background-image: linear-gradient(rgba(25, 31, 36, 0.5),rgba(25, 31, 36, 0.5)),url('<?php echo get_the_post_thumbnail_url(); ?>'); ">
+                  <a href="<?php echo get_site_url(); ?>/innovative-valuation-service-redefines-residential-appraisals/">
+                  <div class="blog-thumbnial--1"style="background-image: linear-gradient(rgba(25, 31, 36, 0.5),rgba(25, 31, 36, 0.5)),url('<?php echo get_site_url(); ?>/wp-content/uploads/2019/07/Drew-Watson-President-EVP-EVAL-4.jpg'); ">
                     </div> </a>
-                    <div class="article--description"><?php the_excerpt();?></div>
-                    <a href="<?php echo the_permalink(); ?>"><span class="blog-cta">READ MORE  ></span></a>
+                    <div class="article--description"><p>“We’re merging technology and big data with Human Intelligence, or H.I.”</p></div>
+                    <a href="<?php echo get_site_url(); ?>/innovative-valuation-service-redefines-residential-appraisals/"><span class="blog-cta">READ MORE  ></span></a>
                 </div>
-          <?php 
-            }
-          
-        }
   
- // Reset the `$post` data to the current post in main query.
- wp_reset_postdata();
-  
- ?>
-  
-            
+                <!-- Article 2 -->
+                <a href="<?php echo get_site_url(); ?>/the-times-they-are-a-changin/">
+                <div class="blog-article--2 col-sm-4">
+                  <div class="blog-title--container">
+                    <div class="blog-title--number">02</div>
+                    <div class="blog-title--text">The Times, They Are A-Changin’</div>
+
+                  </div>
+                  </a>
+                  <a href="<?php echo get_site_url(); ?>/the-times-they-are-a-changin/">
+                  <div class="blog-thumbnial--2" style="background-image: linear-gradient(rgba(25, 31, 36, 0.5),rgba(25, 31, 36, 0.5)),url('<?php echo get_site_url(); ?>/wp-content/uploads/2019/05/Stocksy_txpc2afa7bcDKL200_Medium_1489815.jpg'); ">
+                    </div> </a>
+                    <div class="article--description"><p>“…you better start swimmin’
+Or you’ll sink like a stone.”</p></div>
+                    <a href="<?php echo get_site_url(); ?>/the-times-they-are-a-changin/""><span class="blog-cta">READ MORE  ></span></a>
+                </div>
+
+                <!-- Article 3 -->
+                <a href="<?php echo get_site_url(); ?>/article/">
+                <div class="blog-article--3 col-sm-4">
+                  <div class="blog-title--container">
+                    <div class="blog-title--number">03</div>
+                    <div class="blog-title--text">The De Minimis Change is No Small Matter</div>
+                  </div>
+                  </a>
+                  <a href="<?php echo get_site_url(); ?>/article/">
+                  <div class="blog-thumbnial--3"style="background-image: linear-gradient(rgba(25, 31, 36, 0.5),rgba(25, 31, 36, 0.5)),url('<?php echo get_site_url(); ?>/wp-content/uploads/2019/05/Stocksy_txpc2afa7bcDKL200_Medium_2089908.jpg'); ">
+                    </div> </a>
+                    <div class="article--description"><p>Is your bank ready to handle a 30% increase in residential evaluations?</p></div>
+                    <a href="<?php echo get_site_url(); ?>/article/"><span class="blog-cta">READ MORE  ></span></a>
+                </div>
           </div>
           </div>
-
-
-        <!-- </div> troubleshooting premeture ending of content and main sections of site -->
 
     <div class="testimonial_bg u-full-height">
 			<div class="testimonial_bg--logo rellax" data-rellax-speed="-4"></div>

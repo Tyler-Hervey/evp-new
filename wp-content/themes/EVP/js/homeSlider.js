@@ -42,7 +42,7 @@ var time = 1;
 var progressBarIndex = 0;
 
   $('.slider-dot--container .progressBar').each(function (index) {
-    console.log(this);
+    // console.log(this);
     var progress = "<div class='inProgress inProgress" + index + "'></div>";
     $(this).html(progress);
 });
