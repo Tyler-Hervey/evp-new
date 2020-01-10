@@ -1,0 +1,212 @@
+.service-slider--container {
+  position: relative;
+  z-index:1000;
+  height:100vh;
+  min-height: 90rem;
+  @include respond(tab-land) {
+    // height: initial;
+    // min-height: initial;
+  }
+}
+
+.slick-dots {
+  display: none;
+}
+
+.slider-dot--container {
+  position: relative;
+  display: flex;
+  bottom: 10%;
+  left: 3.5%;
+  width: 69rem;
+  z-index: 1000;
+  cursor: pointer;
+  list-style: none;
+
+  @include respond(tab-port) {
+    width: 100%;
+    margin: 1rem;
+    bottom: 10%;
+
+    li {
+      width: 100%;
+      }
+  }
+  @include respond(phone) {
+    width: 40rem;
+  }
+
+ 
+
+  li.slick-active {
+    // border-top: 3px solid $color-primary;
+    // color: $color-primary;
+
+    @include respond(tab-port) {
+      // width: 100%;
+    }
+    .slider--dot {
+      border-top: none;
+    }
+  }
+}
+
+.slider--dot {
+  // border-top: 1px solid #212121;
+  width: 23rem;
+  height: 2rem;
+  @include respond(tab-port) {
+    width: 100%;
+  }
+}
+
+.service-slider {
+ background-image: linear-gradient(rgba(#F3F7F9, .95), rgba(#F3F7F9, .95)), url('./img/depositphotos_138352306-stock-photo-innovative-technologies-for-industries-mixed.png'); 
+
+ .slick-slide {
+  display: flex;
+  width: 110rem;
+  height: 100vh;
+  min-height: 90rem;
+
+  @include respond(tab-land) {
+    width: 80rem;
+  }
+}
+}
+
+
+
+.slide-heading--container {
+  border-top: 2px solid $color-primary;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  // max-width: 80%;
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 1rem;
+  }
+}
+
+.slide-title--container {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 2px solid $color-primary;
+  max-width: 35rem;
+  padding: 2rem 0;
+}
+
+
+.slide--title {
+  align-self: center;
+  max-width: 35rem;
+  margin-left: 5rem;
+  font-weight: 300;
+}
+
+.slide-heading--p {
+  // position: relative;
+  max-width: 40rem;
+  min-height: 18rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  padding-top: 2rem;
+
+  @include respond(tab-port) {
+    position: static;
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 0;
+    margin-left:0;
+  }
+
+}
+
+.slide--img {
+  display: flex;
+  flex-direction: row-reverse;
+  // position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: 5rem;
+  max-width: 70rem;
+  // height: 80rem;
+    height: 43rem;
+  padding-right: 5rem;
+
+  @include respond(tab-port) {
+    top:0;
+    margin: 1rem 1rem;
+    max-width: 100%;
+    max-height: 50vh;
+  }
+
+  .slide-cta--1 {
+    color: $color-white;
+    background-color: $color-primary;
+    border: none;
+    width: 15.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+    border-radius: 0;
+    
+  }
+  .slide-cta--2 {
+    background-color: $color-cta-primary-light;
+    width: 15.5rem;
+    height: 4.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    
+  }
+  &--1{
+    background-image: linear-gradient(rgba(25, 31, 36, 0.25),rgba(25, 31, 36, 0.25)), url('./img/beautiful-people-planning.png'); 
+  }
+  &--2 {
+     background-image: linear-gradient(rgba(25, 31, 36, 0.5),rgba(25, 31, 36, 0.5)),url('./img/evp-eval.jpg'); 
+  }
+  &--3 {
+    background-image: linear-gradient(rgba(25, 31, 36, 0.5),rgba(25, 31, 36, 0.5)),url('./img/evp-tech.jpg');
+  }
+}
+
+.slide--1{
+  background: transparent;
+  // height: 80vh;
+}
+
+.slide--2 {
+  background: transparent;
+  // height: 80vh;
+}
+
+.slide--3 {
+  // height: 80vh;
+  background: transparent;
+}
+
+  .progressBar {
+    width: 100%;
+    height: 4px;
+    border-top: 1px solid black;
+    display: block;
+  }
+
+.slider--dot {
+.inProgress {
+  background-color: $color-primary;
+  width: 0%;
+  height: 4px;
+  transform: translateY(-50%);
+}
+}

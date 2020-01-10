@@ -1,0 +1,14 @@
+{
+  "name": "evp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/custom.scss custom.css -w"
+  },
+  "author": "Moximetrics",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

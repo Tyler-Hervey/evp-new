@@ -1,0 +1,68 @@
+// *,
+// *::after,
+// *::before {
+//     margin: 0 auto;
+//     padding: 0;
+//     box-sizing: inherit;
+// }
+#content {
+    margin: 0 auto!important;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+    @include respond(tab-land) { 
+        font-size: 56.25%; 
+    }
+
+    @include respond(tab-port) { 
+        font-size: 50%; 
+    }
+}
+#primary {
+    max-width: 125em;
+    margin: 0 auto!important;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #0B0B0B;
+    margin: 0 auto;
+
+    @include respond(desktop-big) {
+        background-color: black;
+    }
+
+}
+
+#main{
+     margin: 0 auto;
+     @include respond(tab-port) {
+        overflow-x: hidden;
+     }
+
+}
+
+a {
+    &,
+    &:link,
+    &:visited,
+    &:focus,
+    &:hover{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.post_content {
+    p {
+        margin-bottom: 0;
+    }
+    a {
+        text-decoration: none;
+        color: $color-primary;
+        text-decoration: underline;
+    }
+}

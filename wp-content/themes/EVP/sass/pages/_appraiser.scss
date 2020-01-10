@@ -1,0 +1,204 @@
+#appraisers-header{
+    position: relative;
+    z-index: 1;
+}
+#philosophy{
+    background: #FFF;
+    color: $color-text-secondary;
+
+    &_logo {
+        position: absolute;
+        top: -8rem;
+        z-index: 0;
+    }
+}
+
+.philosophy{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      height: 60rem;
+    background-color: #0c0c0c;
+    &_text-container{
+    z-index: 1000;
+    }
+    &_h2{
+        font-family: 'Simplon Mono';
+        font-size: 5rem;
+        letter-spacing: .26px;
+    }
+    &_paragraph {
+    
+    max-width: 74rem;
+    margin: 3.5rem auto 0;
+    font-family: 'Simplon Mono';
+    font-size: 2rem;
+    line-height: 2.9rem;
+    letter-spacing: .09px;
+    }
+
+    }
+
+ .appr-sec2{
+     background: #fff;
+
+    &_col{
+    color: $color-text-secondary;
+    font-size: 2.5rem;
+    display: flex;
+    }
+ 
+    &_content{
+        max-width: 45rem;
+         margin: auto; 
+    }
+
+    &_emph{
+        color: $color-primary;
+        font-weight: 500;
+    }   
+ }
+
+
+ 
+ 
+
+.appr-post {
+  position: relative;
+  font-family: 'Simplon Mono';
+  color: $color-text-secondary;
+  background: $color-white;
+  padding: 10rem 0;
+  z-index: 5;
+
+  .appr-post_row{
+    justify-content: center;
+  }
+  @include respond (tab-port) {
+    transform: none;
+  } 
+
+  .appr-post_cta {
+
+    color: $color-primary;
+    cursor: pointer;
+    justify-content: left;
+
+    &:before {
+      position: relative;
+      content: '';
+      border-top: 1px solid $color-text-secondary;
+      display: block;
+      width: 70%;
+      bottom: 1rem;
+      // left:-5rem;
+    }
+
+    &:after {
+      position: relative;
+      content: '';
+      width: 50%;
+      display: block;
+      // margin-left: 2rem;
+      border-top: 1px solid $color-text-secondary;
+      // left:-5rem;
+      top: 1rem;
+    }
+
+  }
+
+  div[class^="appr-post_article"] {
+  
+    @include respond(tab-land) {
+      margin: 5rem auto;
+      max-width: 44rem;
+    }
+  }
+
+  .appr-post_article{
+    @media only screen and (min-width: 1000px) {
+      max-width: 46rem; 
+    };
+ 
+    // @include respond(tab-port) {
+    //   max-width: 46rem; 
+    // }
+    @include respond(phone) {
+      margin-top: 2rem;
+    }
+  }
+
+  .appr-post_title--container {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: start;
+    // justify-content: left;
+    // margin-left: 4rem;
+  }
+
+  .appr-post_title--text {
+    width: 100%;
+    margin-left: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.25;
+    min-height: 6rem;
+
+    &:before {
+      position: relative;
+      content: '';
+      border-top: 2px solid $color-primary;
+      display: block;
+      bottom: 1rem;
+      left:-5rem;
+    }
+
+    &:after {
+      position: relative;
+      content: '';
+      width: 50%;
+      display: block;
+      // margin-left: 2rem;
+      border-top: 2px solid $color-primary;
+      left:-5rem;
+      top: 1rem;
+    }
+
+    // @include respond(phone) {
+    //   color: $color-text-primary;
+    // }
+  }
+
+  .appr-post_title--number {
+     font-size: 2.4rem;
+     line-height: 1.15;
+    // @include respond(phone) {
+    //   color: $color-primary;
+    // }
+  }
+  .appr-post_thumbnial{
+    background-image: linear-gradient(rgba(25, 31, 36, 0.5),rgba(25, 31, 36, 0.5)),url('./img/post-1.jpeg'); 
+    min-height: 30rem;
+    max-width: 40rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+
+  }
+
+
+    .appr-post_description {
+    color: #353535;
+    padding-top: 1rem;
+      max-width: 70%;
+  }
+}
+
+
+
+.appraisers_form--link{
+  color: $color-primary;
+}
